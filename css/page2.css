@@ -1,0 +1,123 @@
+  /* page2的css */
+  .page2_apk {
+    flex: 1;
+}
+
+#page2_apk_bg {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background: url(../image/page2_apkbg.png);
+    background-size: 100%;
+    display: flex;
+    margin-bottom: 20%;
+}
+
+#page2_apk_ph {
+    visibility: hidden;
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    background: url(../image/page2_apk_phImage.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#page2_apk_ph #page2_apk_phbg {
+    width: 80%;
+    height: 60%;
+    padding-top: 30%;
+    padding-left: 10%;
+    overflow: auto;
+}
+
+.page2_apk_ph_app {
+    width: 20%;
+    height: 10%;
+    font-size: 10%;
+    float: left;
+    margin: 5%;
+    text-align: center;
+}
+
+.page2_apk_ph_app:hover {
+    transition: 1s;
+    box-shadow: rgb(11, 234, 235) 0px 0px 10px inset;
+}
+
+.page2_html {
+    flex: 1;
+}
+
+#page2_html_bg {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background: url(../image/page2_htmlbg.png);
+    background-size: 100%;
+    display: flex;
+}
+
+#page2_html_ph {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.page2_apk_ph_html {
+    text-align: center;
+}
+
+.page2_apk_ph_html:hover {
+    transition: 1s;
+    box-shadow: rgb(11, 234, 235) 0px 0px 18px inset;
+}
+
+.page2_apk_ph_html span:hover {
+    transition: 1s;
+    color: wheat;
+}
+
+.page2_word {
+    flex: 1;
+}
+
+#page2_word_bg {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background: url(../image/page2_wordbg.png);
+    background-size: 100%;
+    display: flex;
+}
+
+#page2_word_ph {
+    visibility: hidden;
+    width: 100%;   
+    height: 100%;
+    overflow: auto;
+}
+.page2_apk_ph_word span:hover{
+    transition: 0.2s;
+    color: sandybrown;
+}
+
+.page2_dd {
+    flex: 1;
+    color: white;
+    display: flex;
+}
+
+#page2_dd_bg {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background: url(../image/page2_ddbg.png);
+    background-size: 100%;
+    display: flex;
+}
+#page2_dd_bg :hover{
+    cursor: pointer;
+}

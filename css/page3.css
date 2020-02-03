@@ -1,0 +1,18 @@
+   /* page3 */
+   .page3_ph{
+    flex: 1;
+    display: flex;
+    color: white;
+}
+.page3_ph_code{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.page3_ph_code img{
+   width: 20%;
+   height: 10%;
+   margin-bottom: 10%;
+}

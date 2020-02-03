@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+</head>
+<!-- 导入时间线样式 -->
+<link rel="stylesheet" href="layui/css/layui.css" media="all">
+<!-- 导入page1的css -->
+<link rel="stylesheet" href="./css/page1.css" type="text/css">
+<!-- 导入page2的css -->
+<link rel="stylesheet" href="./css/page2.css" type="text/css">
+<!-- 导入page2的css -->
+<link rel="stylesheet" href="./css/page3.css" type="text/css">
+<style>
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainDiv {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .mainDiv_page {
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+    }
+
+    .mainDiv_page1 {
+        width: 100%;
+        height: 100%;
+        background: url(./image/bg1.png);
+        background-size: 100%;
+        padding-left: 6%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mainDiv_page2 {
+        width: 100%;
+        height: 100%;
+        background: bisque;
+        background: url(./image/bg2.png);
+        background-size: 100%;
+        padding-left: 5%;
+        display: flex;
+    }
+
+    .mainDiv_page3 {
+        width: 100%;
+        height: 100%;
+        background: bisque;
+        background: url(./image/bg3.png);
+        background-size: 100%;
+        padding-left: 5%;
+        display: flex;
+    }
+
+    /*菜单  */
+    .mainMenu {
+        position: absolute;
+        background: rgb(34, 33, 49);
+        opacity: 0.5;
+        width: 5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #iv_openMenu {
+        position: absolute;
+        margin-left: 1%;
+        z-index: 10;
+        margin-top: 1%;
+        opacity: 0.8;
+        width: 2.5%;
+        height: 4%;
+    }
+    
+    #iv_openMenu:hover {
+        cursor: pointer;
+        opacity: 1;
+        transition: 1s;
+    }
+    #iv_love{
+        position: absolute;
+        width: 2%;
+        height: 3%;
+        margin-left: 92%;
+        margin-top: 2%;
+        transition: 1s;
+    }
+    #iv_love:hover{
+        cursor: pointer;
+        width: 3%;
+        height: 4%;
+        transition: 1s;
+    }
+
+    #div_opneMenuBg {
+        background: rgb(62, 62, 71);
+        width: 100%;
+        height: 8%;
+        position: relative;
+        opacity: 0.5;
+        top: 43%;
+    }
+
+
+    .mainMenu_list {
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuList {
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    .menuList:hover {
+        cursor: pointer;
+        text-shadow: 1px 1px gray;
+    }
+</style>
+<script src="./js/util.js"></script>
+<body>
+    <!-- 菜单界面 -->
+    <img src="./image/icon_menu.png" id="iv_openMenu">
+    <a href="./love/love.html" target="_blank"><img src="./image/love.png" id="iv_love"></a>
+    <div class="mainMenu">
+        <div id="div_opneMenuBg"></div>
+        <div class="mainMenu_list">
+            <span class="menuList">
+                <span style="color: red;">home</span><br>
+                <span style="color: white;">首页</span>
+            </span>
+            <span class="menuList">
+                <span style="color: red;">works</span><br>
+                <span style="color: white;">作品</span>
+            </span>
+            <span class="menuList">
+                <span style="color: red;">contact</span><br>
+                <span style="color: white;">联系</span>
+            </span>
+        </div>
+    </div>
+    <!-- 主界面 -->
+    <div class="mainDiv"">
+        <div class=" mainDiv_page">
+        <!-- 第一个界面 -->
+        <div class="mainDiv_page1">
+            <div id="page1_lift">
+                <div id="imgBg"></div>
+                <img src="./image/user/user4.png">
+                <span id="page1_liftText">
+                    <span style="font-size: 50%;">tangminmin<br></span>
+                    唐民民<br>
+                    <span style="font-size: 50%;">
+                        --你微笑面对这个世界，<br>世界也会微笑面对你。
+                    </span>
+                </span>
+            </div>
+            <div id="page1_right">
+                <img src="./image/home_title.png">
+                <!-- 添加时间线 -->
+                <div id="page1_jieshao">
+                    <!-- //添加时间线 -->
+                </div>
+                <!-- 添加图片 -->
+                <span style="font-size: 150%;">形象墙</span>
+                <div id="page1_images">
+                    <img src="./image/user/user1.png" >
+                    <img src="./image/user/user2.png" >
+                    <img src="./image/user/user3.png" >
+                    <img src="./image/user/user4.png" >
+                </div>
+            </div>
+        </div>
+        <div class="mainDiv_page2">
+            <!-- apk区 -->
+            <div class="page2_apk">
+                <div id="page2_apk_bg">
+                    <img src="./image/page2_apk.png" style="width: 20%;height: 10%;margin: auto;">
+                </div>
+                <div id="page2_apk_ph">
+                    <div id="page2_apk_phbg">
+                        <!-- 这里添加所有app -->
+                    </div>
+                </div>
+            </div>
+            <!-- html区 -->
+            <div class="page2_html">
+                <div id="page2_html_bg">
+                    <img src="./image/page2_html.png" style="width: 20%;height: 10%;margin: auto;">
+                </div>
+                <div id="page2_html_ph">
+                    <!-- 这里加载所有的html -->
+                </div>
+
+            </div>
+            <!-- word区 -->
+            <div class="page2_word">
+                <div id="page2_word_bg">
+                    <img src="./image/page2_word.png" style="width: 20%;height: 10%;margin: auto;">
+                </div>
+                <div id="page2_word_ph">
+                    <!-- 这里加载所有的word -->
+                    
+                </div>
+            </div>
+            <div class="page2_dd">
+                <div id="page2_dd_bg">
+                    <img src="./image/page2_dd.png" style="width: 20%;height: 10%;margin: auto;">
+                </div>
+            </div>
+        </div>
+        <div class="mainDiv_page3">
+            <div class="page3_ph" >
+                <div class="page3_ph_code">
+                    <img src="./image/page3_qq.png">
+                    <span>1223758238</span>
+                </div>
+            </div>
+            <div class="page3_ph" >
+                <div class="page3_ph_code">
+                    <img src="./image/page3_wx.png">
+                    <span>ta1223758238</span>
+                </div>
+            </div>
+            <div class="page3_ph" >
+                <div class="page3_ph_code">
+                    <img src="./image/page3_phone.png">
+                    <span>17674078238</span>
+                </div>
+            </div>
+            <div class="page3_ph" >
+                <div class="page3_ph_code">
+                    <img src="./image/page3_yx.png">
+                    <span>1223758238@qq.com</span>
+                </<div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<!-- 导入page1的js -->
+<script src="./js/page1.js"></script>
+<!-- 导入page2的js -->
+<script src="./js/page2.js"></script>
+<script>
+    alert("建议使用Chrome(谷歌)浏览器");
+    //-------主框架
+    let pagePost = ["0%", "-49.5%", "-99%"]; //主界面得移动
+    let menuBgCh = ["44%", "52%", "60%"]; //菜单选中背景
+    let newPage = 0; //
+    let page = document.getElementsByClassName("mainDiv_page")[0];
+    let isAnimatino = true;
+    //点击menu切换
+    $(".menuList").click(function () {
+        let index = $(".menuList").index(this); //获取点击的第几个class
+        animationPageNext(index);
+    })
+    //触发滚轮事件
+    window.onmousewheel = function (e) {
+        if (isAnimatino) { //判定是否切换
+            isAnimatino = false; //刚进入不得立马切换
+            e = e || window.event;
+            if (e.wheelDelta > 0) {
+                //上滑动
+                newPage--;
+                if (newPage == -1) {
+                    newPage = pagePost.length - 1;
+                }
+            }
+            if (e.wheelDelta < 0) {
+                //下滑动
+                newPage++;
+                if (newPage == pagePost.length) {
+                    newPage = 0
+                }
+            }
+            setTimeout(function () {
+                //等待动画执行完毕就允许再次监听
+                isAnimatino = true;
+            }, 1000);
+            animationPageNext(newPage); //调用切换页面
+        }
+    }
+    let isOpenMenu = true;
+    $("#iv_openMenu").click(() => {
+        $(".mainMenu").animate({
+            width: 'toggle'
+        }, 500);
+        if (isOpenMenu) {
+            r = "180deg";
+        } else {
+            r = "0deg";
+        }
+        $("#iv_openMenu").css({
+            "transform": "rotate(" + r + ")"
+        });
+        isOpenMenu = !isOpenMenu;
+    });
+    //写一个动画切换界面的方法
+    function animationPageNext(index) {
+        page.style.marginTop = pagePost[index]; //移动主界面
+        $("#div_opneMenuBg").animate({
+            "top": menuBgCh[index]
+        }); //移动选中背景
+    }
+</script>
+
+</html>
